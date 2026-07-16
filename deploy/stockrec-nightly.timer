@@ -1,0 +1,10 @@
+[Unit]
+Description=Run stockrec daily after NSE close (Mon-Fri 18:00 IST)
+
+[Timer]
+OnCalendar=Mon..Fri 18:00 Asia/Kolkata
+RandomizedDelaySec=10m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

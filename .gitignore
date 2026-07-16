@@ -1,0 +1,9 @@
+# disposable / machine-local — the DBs and plans/ are deliberately COMMITTED
+# (git history is the persistence layer for GitHub Actions runs)
+.venv/
+.cache/
+__pycache__/
+*.pyc
+logs/
+backups/
+.nightly.lock

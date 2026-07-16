@@ -1,0 +1,104 @@
+name: nightly
+
+on:
+  schedule:
+    - cron: '30 12 * * 1-5'   # 18:00 IST primary
+    - cron: '0 17 * * 1-5'    # 22:30 IST fallback (GH cron is best-effort)
+  workflow_dispatch:
+
+# never two runs at once (fallback vs delayed primary)
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  TZ: Asia/Kolkata
+  PYTHONUTF8: '1'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      # fallback trigger: skip if the primary already ran today
+      - name: guard
+        id: guard
+        run: |
+          if [ -f "plans/$(date +%F).json" ]; then
+            echo "done=1" >> "$GITHUB_OUTPUT"
+            echo "already ran today; skipping"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.guard.outputs.done != '1'
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: install
+        if: steps.guard.outputs.done != '1'
+        run: pip install -r requirements.txt
+
+      # analog dataset + price caches survive between runs; a lost cache
+      # only costs one full 5y rebuild, never correctness
+      - name: restore .cache
+        if: steps.guard.outputs.done != '1'
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: stockrec-cache-${{ github.run_id }}
+          restore-keys: stockrec-cache-
+
+      # never trade fresh picks on stale data: wait for TODAY's NSE EOD
+      # files (equity + F&O bhavcopy), rechecking every 15 min until
+      # 21:30 IST. Past that (holiday / NSE late) -> defense-only run.
+      - name: wait for NSE EOD data
+        if: steps.guard.outputs.done != '1'
+        id: data
+        run: |
+          stale=1
+          while :; do
+            if python deploy/probe.py; then stale=0; break; fi
+            [ "$(date +%s)" -ge "$(date -d '21:30' +%s)" ] && break
+            sleep 900
+          done
+          echo "stale=$stale" >> "$GITHUB_OUTPUT"
+          [ "$stale" = 1 ] && echo "EOD files never posted; defense-only run" || true
+
+      - name: run stockrec
+        if: steps.guard.outputs.done != '1'
+        run: |
+          flag=""
+          [ "${{ steps.data.outputs.stale }}" = "1" ] && flag="--stale"
+          python -m stockrec --test $flag
+
+      # git history is the backup: DBs + the day's plan go back to the repo
+      - name: commit results
+        if: steps.guard.outputs.done != '1'
+        run: |
+          git config user.name stockrec-bot
+          git config user.email actions@github.com
+          git add portfolio.db paper.db research.db order_plan.json plans
+          git commit -m "run $(date +%F)" || { echo "nothing to commit"; exit 0; }
+          git pull --rebase && git push
+
+      - name: email picks
+        if: steps.guard.outputs.done != '1'
+        env:
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+        run: python deploy/mail.py
+
+      - name: email failure alert
+        if: failure()
+        env:
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+        run: python deploy/mail.py failed || true

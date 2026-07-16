@@ -1,0 +1,40 @@
+{
+ "generated": "2026-07-16",
+ "picks": [
+  {
+   "symbol": "APOLLOHOSP",
+   "price": 8888.0,
+   "conviction": 72.4,
+   "stop": 8612.84,
+   "target": 9231.95
+  },
+  {
+   "symbol": "SUNPHARMA",
+   "price": 1950.0999755859375,
+   "conviction": 71.2,
+   "stop": 1889.43,
+   "target": 2025.93
+  },
+  {
+   "symbol": "BAJAJ-AUTO",
+   "price": 10331.5,
+   "conviction": 70.5,
+   "stop": 9902.93,
+   "target": 10867.21
+  },
+  {
+   "symbol": "ADANIPORTS",
+   "price": 1826.4000244140625,
+   "conviction": 69.7,
+   "stop": 1750.47,
+   "target": 1921.31
+  },
+  {
+   "symbol": "EICHERMOT",
+   "price": 7418.5,
+   "conviction": 68.7,
+   "stop": 7102.44,
+   "target": 7813.58
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=stockrec nightly paper-trading run
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=__ROOT__
+ExecStart=__ROOT__/deploy/nightly.sh
+TimeoutStartSec=10h
+Nice=10

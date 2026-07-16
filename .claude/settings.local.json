@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version)",
+      "PowerShell(pip --version)",
+      "PowerShell(& \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Python\\\\pythoncore-3.14-64\\\\python.exe\" --version; \\(Get-Command py -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(py -m venv .venv)",
+      "PowerShell(.\\\\.venv\\\\Scripts\\\\python.exe -m pip install --quiet yfinance pandas rich vaderSentiment)",
+      "PowerShell(.\\\\.venv\\\\Scripts\\\\python.exe -c \"import yfinance, pandas, rich, vaderSentiment; print\\('deps OK', yfinance.__version__, pandas.__version__\\)\")",
+      "PowerShell(.\\\\.venv\\\\Scripts\\\\python.exe -c \"from stockrec import cli, paper, research, universe; print\\('OK', len\\(universe.resolve\\('midcap150'\\)\\), 'midcaps'\\)\")",
+      "PowerShell(.\\\\stockrec.cmd test init 100000)",
+      "PowerShell(.\\\\stockrec.cmd test)"
+    ]
+  }
+}

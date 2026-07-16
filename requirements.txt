@@ -1,0 +1,6 @@
+yfinance
+pandas
+rich
+vaderSentiment
+requests
+brotli
