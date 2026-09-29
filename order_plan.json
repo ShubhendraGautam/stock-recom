@@ -1,61 +1,61 @@
 {
- "generated": "2026-09-25",
+ "generated": "2026-09-29",
  "picks": [
   {
-   "symbol": "APOLLOHOSP",
-   "price": 8889.0,
-   "conviction": 65.5,
-   "stop": 8586.58,
-   "target": 9267.02
-  },
-  {
-   "symbol": "DIVISLAB",
-   "price": 9619.5,
-   "conviction": 65.3,
-   "stop": 9242.38,
-   "target": 10090.9
-  },
-  {
    "symbol": "ADANIPORTS",
-   "price": 1788.0,
-   "conviction": 65.0,
-   "stop": 1714.12,
-   "target": 1880.35
+   "price": 1822.0,
+   "conviction": 68.0,
+   "stop": 1739.03,
+   "target": 1925.71
   },
   {
-   "symbol": "MOTHERSON",
-   "price": 165.7100067138672,
-   "conviction": 64.6,
-   "stop": 158.1,
-   "target": 175.22
+   "symbol": "LODHA",
+   "price": 1106.5999755859375,
+   "conviction": 67.5,
+   "stop": 1030.72,
+   "target": 1201.45
   },
   {
-   "symbol": "TORNTPHARM",
-   "price": 4988.5,
-   "conviction": 64.1,
-   "stop": 4785.67,
-   "target": 5242.04
+   "symbol": "INDHOTEL",
+   "price": 714.3499755859375,
+   "conviction": 67.4,
+   "stop": 684.46,
+   "target": 751.71
   },
   {
    "symbol": "JSWSTEEL",
-   "price": 1277.0,
-   "conviction": 63.4,
-   "stop": 1228.61,
-   "target": 1337.49
+   "price": 1272.4000244140625,
+   "conviction": 66.9,
+   "stop": 1223.77,
+   "target": 1333.19
+  },
+  {
+   "symbol": "DIVISLAB",
+   "price": 9431.0,
+   "conviction": 66.5,
+   "stop": 9056.05,
+   "target": 9899.69
   },
   {
    "symbol": "HAL",
-   "price": 4800.0,
-   "conviction": 63.1,
-   "stop": 4602.85,
-   "target": 5046.43
+   "price": 4549.2998046875,
+   "conviction": 66.2,
+   "stop": 4341.83,
+   "target": 4808.63
   },
   {
-   "symbol": "BOSCHLTD",
-   "price": 48250.0,
-   "conviction": 63.1,
-   "stop": 46136.66,
-   "target": 50891.67
+   "symbol": "APOLLOHOSP",
+   "price": 8659.0,
+   "conviction": 64.7,
+   "stop": 8349.68,
+   "target": 9045.66
+  },
+  {
+   "symbol": "ZYDUSLIFE",
+   "price": 1200.5,
+   "conviction": 64.1,
+   "stop": 1144.98,
+   "target": 1269.9
   }
  ]
 }
