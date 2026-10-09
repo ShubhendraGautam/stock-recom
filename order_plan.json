@@ -1,61 +1,61 @@
 {
- "generated": "2026-10-02",
+ "generated": "2026-10-09",
  "picks": [
   {
-   "symbol": "INDHOTEL",
-   "price": 728.6500244140625,
-   "conviction": 67.4,
-   "stop": 697.48,
-   "target": 767.61
+   "symbol": "KOTAKBANK",
+   "price": 441.0,
+   "conviction": 68.1,
+   "stop": 421.3,
+   "target": 465.63
   },
   {
    "symbol": "ADANIPORTS",
-   "price": 1798.300048828125,
-   "conviction": 67.1,
-   "stop": 1714.6,
-   "target": 1902.92
+   "price": 1761.0,
+   "conviction": 67.7,
+   "stop": 1664.27,
+   "target": 1881.92
+  },
+  {
+   "symbol": "PNB",
+   "price": 116.9800033569336,
+   "conviction": 67.2,
+   "stop": 111.34,
+   "target": 124.03
   },
   {
    "symbol": "DIVISLAB",
-   "price": 9291.5,
-   "conviction": 66.9,
-   "stop": 8910.47,
-   "target": 9767.78
+   "price": 9340.0,
+   "conviction": 66.5,
+   "stop": 8913.9,
+   "target": 9872.63
   },
   {
    "symbol": "HAL",
-   "price": 4668.0,
+   "price": 4655.60009765625,
    "conviction": 66.4,
-   "stop": 4453.68,
-   "target": 4935.9
+   "stop": 4427.22,
+   "target": 4941.08
   },
   {
-   "symbol": "KOTAKBANK",
-   "price": 417.0,
-   "conviction": 66.2,
-   "stop": 401.06,
-   "target": 436.93
+   "symbol": "INDHOTEL",
+   "price": 715.6500244140625,
+   "conviction": 65.8,
+   "stop": 683.2,
+   "target": 756.22
+  },
+  {
+   "symbol": "BHEL",
+   "price": 433.6000061035156,
+   "conviction": 65.5,
+   "stop": 405.45,
+   "target": 468.79
   },
   {
    "symbol": "APOLLOHOSP",
-   "price": 8165.5,
-   "conviction": 65.9,
-   "stop": 7791.7,
-   "target": 8632.75
-  },
-  {
-   "symbol": "MOTHERSON",
-   "price": 163.25999450683594,
-   "conviction": 65.1,
-   "stop": 155.21,
-   "target": 173.32
-  },
-  {
-   "symbol": "LODHA",
-   "price": 1135.0,
-   "conviction": 64.8,
-   "stop": 1058.37,
-   "target": 1230.79
+   "price": 8027.5,
+   "conviction": 65.2,
+   "stop": 7601.59,
+   "target": 8559.89
   }
  ]
 }

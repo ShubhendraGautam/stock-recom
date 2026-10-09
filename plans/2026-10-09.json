@@ -1,0 +1,61 @@
+{
+ "generated": "2026-10-09",
+ "picks": [
+  {
+   "symbol": "KOTAKBANK",
+   "price": 441.0,
+   "conviction": 68.1,
+   "stop": 421.3,
+   "target": 465.63
+  },
+  {
+   "symbol": "ADANIPORTS",
+   "price": 1761.0,
+   "conviction": 67.7,
+   "stop": 1664.27,
+   "target": 1881.92
+  },
+  {
+   "symbol": "PNB",
+   "price": 116.9800033569336,
+   "conviction": 67.2,
+   "stop": 111.34,
+   "target": 124.03
+  },
+  {
+   "symbol": "DIVISLAB",
+   "price": 9340.0,
+   "conviction": 66.5,
+   "stop": 8913.9,
+   "target": 9872.63
+  },
+  {
+   "symbol": "HAL",
+   "price": 4655.60009765625,
+   "conviction": 66.4,
+   "stop": 4427.22,
+   "target": 4941.08
+  },
+  {
+   "symbol": "INDHOTEL",
+   "price": 715.6500244140625,
+   "conviction": 65.8,
+   "stop": 683.2,
+   "target": 756.22
+  },
+  {
+   "symbol": "BHEL",
+   "price": 433.6000061035156,
+   "conviction": 65.5,
+   "stop": 405.45,
+   "target": 468.79
+  },
+  {
+   "symbol": "APOLLOHOSP",
+   "price": 8027.5,
+   "conviction": 65.2,
+   "stop": 7601.59,
+   "target": 8559.89
+  }
+ ]
+}
