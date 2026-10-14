@@ -1,61 +1,61 @@
 {
- "generated": "2026-10-09",
+ "generated": "2026-10-14",
  "picks": [
   {
-   "symbol": "KOTAKBANK",
-   "price": 441.0,
-   "conviction": 68.1,
-   "stop": 421.3,
-   "target": 465.63
-  },
-  {
-   "symbol": "ADANIPORTS",
-   "price": 1761.0,
-   "conviction": 67.7,
-   "stop": 1664.27,
-   "target": 1881.92
+   "symbol": "HAL",
+   "price": 4933.0,
+   "conviction": 69.3,
+   "stop": 4703.24,
+   "target": 5220.2
   },
   {
    "symbol": "PNB",
-   "price": 116.9800033569336,
-   "conviction": 67.2,
-   "stop": 111.34,
-   "target": 124.03
-  },
-  {
-   "symbol": "DIVISLAB",
-   "price": 9340.0,
-   "conviction": 66.5,
-   "stop": 8913.9,
-   "target": 9872.63
-  },
-  {
-   "symbol": "HAL",
-   "price": 4655.60009765625,
-   "conviction": 66.4,
-   "stop": 4427.22,
-   "target": 4941.08
+   "price": 118.5,
+   "conviction": 67.8,
+   "stop": 112.81,
+   "target": 125.61
   },
   {
    "symbol": "INDHOTEL",
-   "price": 715.6500244140625,
-   "conviction": 65.8,
-   "stop": 683.2,
-   "target": 756.22
+   "price": 725.4000244140625,
+   "conviction": 67.3,
+   "stop": 693.87,
+   "target": 764.81
   },
   {
-   "symbol": "BHEL",
-   "price": 433.6000061035156,
-   "conviction": 65.5,
-   "stop": 405.45,
-   "target": 468.79
+   "symbol": "KOTAKBANK",
+   "price": 438.04998779296875,
+   "conviction": 67.0,
+   "stop": 419.81,
+   "target": 460.85
   },
   {
-   "symbol": "APOLLOHOSP",
-   "price": 8027.5,
-   "conviction": 65.2,
-   "stop": 7601.59,
-   "target": 8559.89
+   "symbol": "ADANIPORTS",
+   "price": 1748.699951171875,
+   "conviction": 66.6,
+   "stop": 1655.33,
+   "target": 1865.41
+  },
+  {
+   "symbol": "TECHM",
+   "price": 1575.199951171875,
+   "conviction": 66.5,
+   "stop": 1487.98,
+   "target": 1684.22
+  },
+  {
+   "symbol": "DIVISLAB",
+   "price": 9023.0,
+   "conviction": 64.8,
+   "stop": 8576.65,
+   "target": 9580.94
+  },
+  {
+   "symbol": "LODHA",
+   "price": 1059.5999755859375,
+   "conviction": 64.0,
+   "stop": 986.36,
+   "target": 1151.15
   }
  ]
 }
