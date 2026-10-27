@@ -1,61 +1,61 @@
 {
- "generated": "2026-10-23",
+ "generated": "2026-10-27",
  "picks": [
   {
-   "symbol": "PNB",
-   "price": 120.37000274658203,
-   "conviction": 69.2,
-   "stop": 113.95,
-   "target": 128.39
-  },
-  {
    "symbol": "INDHOTEL",
-   "price": 781.75,
-   "conviction": 68.0,
-   "stop": 739.64,
-   "target": 834.38
-  },
-  {
-   "symbol": "TECHM",
-   "price": 1790.0,
-   "conviction": 67.9,
-   "stop": 1682.98,
-   "target": 1923.77
-  },
-  {
-   "symbol": "KOTAKBANK",
-   "price": 430.5,
-   "conviction": 67.4,
-   "stop": 411.42,
-   "target": 454.35
-  },
-  {
-   "symbol": "BHARTIARTL",
-   "price": 1892.0999755859375,
-   "conviction": 66.2,
-   "stop": 1805.49,
-   "target": 2000.37
-  },
-  {
-   "symbol": "DIVISLAB",
-   "price": 8950.0,
-   "conviction": 65.8,
-   "stop": 8483.63,
-   "target": 9532.96
-  },
-  {
-   "symbol": "ICICIBANK",
-   "price": 1394.199951171875,
-   "conviction": 65.7,
-   "stop": 1343.03,
-   "target": 1458.16
+   "price": 812.8499755859375,
+   "conviction": 70.3,
+   "stop": 769.15,
+   "target": 867.47
   },
   {
    "symbol": "ADANIPORTS",
-   "price": 1702.699951171875,
-   "conviction": 65.4,
-   "stop": 1611.27,
-   "target": 1816.99
+   "price": 1754.5,
+   "conviction": 69.2,
+   "stop": 1663.89,
+   "target": 1867.76
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "price": 442.5,
+   "conviction": 68.6,
+   "stop": 423.25,
+   "target": 466.56
+  },
+  {
+   "symbol": "BHARTIARTL",
+   "price": 1978.800048828125,
+   "conviction": 68.3,
+   "stop": 1888.67,
+   "target": 2091.46
+  },
+  {
+   "symbol": "TECHM",
+   "price": 1811.4000244140625,
+   "conviction": 67.7,
+   "stop": 1704.97,
+   "target": 1944.43
+  },
+  {
+   "symbol": "JSWSTEEL",
+   "price": 1252.699951171875,
+   "conviction": 67.5,
+   "stop": 1183.52,
+   "target": 1339.17
+  },
+  {
+   "symbol": "PNB",
+   "price": 121.2699966430664,
+   "conviction": 67.4,
+   "stop": 115.07,
+   "target": 129.02
+  },
+  {
+   "symbol": "DIVISLAB",
+   "price": 9505.5,
+   "conviction": 66.6,
+   "stop": 9009.12,
+   "target": 10125.98
   }
  ]
 }
